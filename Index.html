@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tailwind Lab</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Fonte Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Configuração do Tailwind -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        poppins: ['Poppins', 'sans-serif']
+                    },
+                    colors: {
+                        vscode: '#007acc',
+                        fundo: '#212121',
+                        painel: '#252526',
+                        card: '#2d2d30'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="min-h-screen bg-fundo p-4 font-poppins text-gray-300 md:h-screen md:overflow-hidden">
+
+    <!-- CABEÇALHO -->
+    <header class="mb-4 flex flex-col items-center justify-center rounded border border-gray-700 border-l-4 border-l-vscode bg-painel p-4">
+        <h1 class="text-2xl font-bold text-vscode">
+            Tailwind Lab
+        </h1>
+
+        <p class="mt-1 text-center text-xs text-gray-400">
+            Estudando Tailwind CSS
+        </p>
+    </header>
+
+    <!-- CONTEÚDO -->
+    <main class="grid grid-cols-1 gap-3 rounded border border-gray-700 bg-painel p-3 sm:grid-cols-2 md:h-[calc(100vh-150px)] md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
+
+        <div class="flex items-center justify-center rounded border border-gray-700 border-l-4 border-l-vscode bg-card p-4 text-center text-sm font-semibold">
+            Cores
+        </div>
+
+        <div class="flex items-center justify-center rounded border border-gray-700 border-l-4 border-l-vscode bg-card p-4 text-center text-sm font-semibold">
+            Tipografia
+        </div>
+
+        <div class="flex items-center justify-center rounded border border-gray-700 border-l-4 border-l-vscode bg-card p-4 text-center text-sm font-semibold">
+            Espaçamento
+        </div>
+
+        <div class="flex items-center justify-center rounded border border-gray-700 border-l-4 border-l-vscode bg-card p-4 text-center text-sm font-semibold">
+            Dimensões
+        </div>
+
+        <div class="flex items-center justify-center rounded border border-gray-700 border-l-4 border-l-vscode bg-card p-4 text-center text-sm font-semibold">
+            Bordas
+        </div>
+
+        <div class="flex items-center justify-center rounded border border-gray-700 border-l-4 border-l-vscode bg-card p-4 text-center text-sm font-semibold">
+            Posicionamento
+        </div>
+
+        <div class="flex items-center justify-center rounded border border-gray-700 border-l-4 border-l-vscode bg-card p-4 text-center text-sm font-semibold">
+            Flexbox
+        </div>
+
+        <div class="flex items-center justify-center rounded border border-gray-700 border-l-4 border-l-vscode bg-card p-4 text-center text-sm font-semibold">
+            Grid
+        </div>
+
+        <div class="flex items-center justify-center rounded border border-gray-700 border-l-4 border-l-vscode bg-card p-4 text-center text-sm font-semibold">
+            Responsividade
+        </div>
+
+        <div class="flex items-center justify-center rounded border border-gray-700 border-l-4 border-l-vscode bg-card p-4 text-center text-sm font-semibold">
+            Tailwind CSS
+        </div>
+
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer class="mt-4 rounded border border-gray-700 bg-painel p-3 text-center text-xs text-gray-500">
+        Atividade 02 - Frameworks Front-end
+    </footer>
+
+</body>
+</html>
